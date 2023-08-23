@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../neural_vga.srcs/sources_1/new/buffer_draw.v" \
+"../../../../neural_vga.srcs/sources_1/new/vga640x480.v" \
+"../../../../neural_vga.srcs/sources_1/new/main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
